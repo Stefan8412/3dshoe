@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
 import Shoe from "@/components/Shoe";
+import { lusitana } from "@/app/ui/fonts";
 
 import { CustomizationProvider } from "@/context/Customization";
 import Configurator from "@/components/Configurator";
@@ -14,9 +15,21 @@ export default function Home() {
       <CustomizationProvider>
         <div className="mx-auto flex w-full flex-col flex-wrap items-center md:flex-row  lg:w-4/5">
           <div className="flex w-full flex-col items-start justify-center p-8 text-center md:w-2/5 md:text-left">
-            <p className="w-full uppercase">shoes configurator</p>
-            <h1 className="my-4 text-2xl font-bold leading-tight">Xyndata</h1>
-            <p className="mb-8 text-2xl leading-normal">best shoes on market</p>
+            <p
+              className={`${lusitana.className} w-full uppercase">shoes configurator`}
+            >
+              shoes configurator
+            </p>
+            <h1
+              className={`${lusitana.className}my-4 text-2xl font-bold leading-tight`}
+            >
+              Xyndata
+            </h1>
+            <p
+              className={`${lusitana.className} mb-8 text-2xl leading-normal">best shoes on market`}
+            >
+              best shoes on market
+            </p>
           </div>
           <div className="w-full text-center md:w-3/5">
             <Canvas

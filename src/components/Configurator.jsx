@@ -9,18 +9,16 @@ Title: Scan Shoe 07-Freepoly.org
 
 import { useCustomization } from "@/context/Customization";
 import Picker from "./Picker";
-
+import { lusitana } from "@/app/ui/fonts";
 const Configurator = () => {
   const { shoeColors, shoeColor, setShoeColor } = useCustomization();
   return (
     <div className="absolute flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
       <div className="p-3">
         <div className="flex items-center justify-between mb-1">
-          <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
-            Lences color
-          </h5>
+          <h5 className={`${lusitana.className}`}>Lences color</h5>
         </div>
-        <p className="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+        <p className={`${lusitana.className}`}>
           you can choose lences color by clicking on color
         </p>
 
@@ -42,7 +40,7 @@ const Configurator = () => {
           </div>
         ))}
         <div className="flex items-center justify-between mb-3">
-          <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+          <h5 className={`${lusitana.className} `}>
             Other parts color-choose shoe part
           </h5>
         </div>
