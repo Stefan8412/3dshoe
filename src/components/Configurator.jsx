@@ -14,8 +14,8 @@ const Configurator = () => {
   const { shoeColors, shoeColor, setShoeColor } = useCustomization();
   return (
     <div className="absolute flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-3">
+      <div className="p-3">
+        <div className="flex items-center justify-between mb-1">
           <h5 className="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
             Lences color
           </h5>

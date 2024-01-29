@@ -12,12 +12,10 @@ export default function Home() {
     <>
       <CustomizationProvider>
         <div className="mx-auto flex w-full flex-col flex-wrap items-center md:flex-row  lg:w-4/5">
-          <div className="flex w-full flex-col items-start justify-center p-12 text-center md:w-2/5 md:text-left">
+          <div className="flex w-full flex-col items-start justify-center p-8 text-center md:w-2/5 md:text-left">
             <p className="w-full uppercase">shoes configurator</p>
-            <h1 className="my-4 text-5xl font-bold leading-tight">Xyndata</h1>
-            <p className="mb-8 text-2xl leading-normal">
-              choose color of every parts and buy shoes, you can zoom in and out
-            </p>
+            <h1 className="my-4 text-2xl font-bold leading-tight">Xyndata</h1>
+            <p className="mb-8 text-2xl leading-normal">best shoes on market</p>
           </div>
           <div className="w-full text-center md:w-3/5">
             <Canvas
@@ -48,7 +46,6 @@ export default function Home() {
               </Suspense>
               <OrbitControls enableZoom={true} />
             </Canvas>
-
             <Configurator />
           </div>
         </div>
