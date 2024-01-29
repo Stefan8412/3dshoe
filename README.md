@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
 First, run the development server:
 
 ```bash
@@ -27,10 +32,11 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built With
 
-## Deploy on Vercel
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [![Next][Next.js]][https://nextjs.org/]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [![ReactThreefiber][ReactThreeFiber.js]][https://docs.pmnd.rs/react-three-fiber/getting-started/introduction]
+- [![Tailwind][Tailwindcss.com]][https://tailwindcss.com/]
