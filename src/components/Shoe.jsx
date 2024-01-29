@@ -19,6 +19,7 @@ const Shoe = (props) => {
   const { nodes, materials } = useGLTF("shoe-draco.glb");
   const { shoeColor } = useCustomization();
 
+  //animate shoe
   useFrame((state, delta) => {
     const t = state.clock.getElapsedTime();
     ref.current.rotation.x += 1 * delta;

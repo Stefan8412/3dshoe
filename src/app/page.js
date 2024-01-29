@@ -6,6 +6,7 @@ import Shoe from "@/components/Shoe";
 
 import { CustomizationProvider } from "@/context/Customization";
 import Configurator from "@/components/Configurator";
+import CanvasLoader from "@/components/CanvasLoader";
 
 export default function Home() {
   return (
@@ -31,7 +32,8 @@ export default function Home() {
                 penumbra={1}
                 position={[5, 25, 20]}
               />
-              <Suspense fallback={null}>
+              {/*imporove performance with loader */}
+              <Suspense fallback={<CanvasLoader />}>
                 <Shoe />
                 <Environment preset="city" />
                 <ContactShadows
